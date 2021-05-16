@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_151" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="model.Person">
+    <void property="age">
+     <int>13</int>
+    </void>
+    <void property="name">
+     <string>Amila</string>
+    </void>
+    <void property="nationalIdentificationNumber">
+     <string>12323</string>
+    </void>
+    <void property="surname">
+     <string>Hasović</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="model.Person">
+    <void property="age">
+     <int>18</int>
+    </void>
+    <void property="name">
+     <string>Aida</string>
+    </void>
+    <void property="nationalIdentificationNumber">
+     <string>2435</string>
+    </void>
+    <void property="surname">
+     <string>Buza</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="model.Person">
+    <void property="age">
+     <int>23</int>
+    </void>
+    <void property="name">
+     <string>Mitar</string>
+    </void>
+    <void property="nationalIdentificationNumber">
+     <string>24554</string>
+    </void>
+    <void property="surname">
+     <string>Zirojević</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="model.Person">
+    <void property="age">
+     <int>43</int>
+    </void>
+    <void property="name">
+     <string>Amer</string>
+    </void>
+    <void property="nationalIdentificationNumber">
+     <string>2323</string>
+    </void>
+    <void property="surname">
+     <string>Jahjefendić</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="model.Person">
+    <void property="age">
+     <int>13</int>
+    </void>
+    <void property="name">
+     <string>Benjamin</string>
+    </void>
+    <void property="nationalIdentificationNumber">
+     <string>76878</string>
+    </void>
+    <void property="surname">
+     <string>Knežević</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
