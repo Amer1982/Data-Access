@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "http://www.hibernate.org/dtd/hibernate-mapping"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="entity.Product" table="actor" optimistic-lock="version" catalog="sakila">
+       <!--name = ime klase; table = ime tabele; optimistic lock = multithreding; catalog = ime baze-->
+        <id name="actorId" type="java.lang.Integer">
+            <column name="actor_id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name" length="50" not-null="true"/>
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="50" not-null="true"/>
+        </property>
+        <property name="lastUpdate">
+            <column name="last_update" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
