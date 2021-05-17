@@ -1,4 +1,5 @@
 import dao.FilePersonDao;
+import dao.JsonDao;
 import dao.SerializablePersonDao;
 import dao.XMLPersonDao;
 import exception.DaoException;
@@ -26,6 +27,9 @@ public class Application {
         persistanceStrategy.writePersons(personList);//DAT
         persistanceStrategy.setPersonDao(new XMLPersonDao());
         persistanceStrategy.writePersons(personList);//XML
+        persistanceStrategy.setPersonDao(new JsonDao());
+        persistanceStrategy.writePersons(personList);//JSON
+
         //TESTIRATI ČITANJE LISTE IZ FAJLA
         //txt
         persistanceStrategy.setPersonDao(new FilePersonDao());
@@ -41,5 +45,11 @@ public class Application {
         persistanceStrategy.setPersonDao(new XMLPersonDao());
         List<Person> xmlPersone = persistanceStrategy.readPersons();
         xmlPersone.forEach(System.out::println);
+
+        //JSON
+        System.out.println();
+        persistanceStrategy.setPersonDao(new JsonDao());
+        List<Person> jsonPersone = persistanceStrategy.readPersons();
+        jsonPersone.forEach(System.out::println);
     }
 }
